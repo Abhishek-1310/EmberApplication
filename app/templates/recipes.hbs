@@ -1,0 +1,9 @@
+{{page-title "Recipes"}}
+<h1>recipes books</h1>
+
+{{#each @model as |recipe|}}
+    <RecipeView @title="{{recipe.title}}"
+     @description="{{recipe.description}}"
+     @id="{{recipe.id}}"
+      />
+{{/each}}

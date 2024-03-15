@@ -1,7 +1,11 @@
 {{page-title "ResApp"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar">
+    <LinkTo class="nav-link" @route="recipes">Home</LinkTo>
+    <LinkTo class="nav-link" @route="create-recipe">Create a recipe</LinkTo>
+    <LinkTo class="nav-link" @route="favorite">Favorite</LinkTo>
+</nav>
+<div class="container">
+    {{outlet}}
+</div>
 
-{{outlet}}
